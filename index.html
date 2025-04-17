@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+    
+    <!-- Sign Up Form -->
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your surname">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a secure password">
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter your contact number">
+
+        <button type="submit">Submit</button>
+    </form>
+    <p id="error-message" class="hidden">Please fill out all fields and ensure your password is secure!</p>
+
+    <!-- Toggle Visibility Section -->
+    <button id="toggleInfoButton">Show/Hide Info</button>
+    <div id="infoSection" class="hidden">
+        <p>All fields of the form are required.</p>
+        <p>Your password should contain a mix of uppercase letters, lowercase letters, numbers, and special characters to ensure security.</p>
+        <p>The purpose of this form is to sign up as a member of the site.</p>
+    </div>
+
+    <!-- Counter -->
+    <div>
+        <p>Button Click Counter: <span id="counter">0</span></p>
+        <button id="counterButton">Click Me!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
